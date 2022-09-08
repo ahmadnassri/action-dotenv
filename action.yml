@@ -1,0 +1,18 @@
+name: .env parser action
+description: read the content of .env files into the GitHub Actions Context
+
+branding:
+  icon: package
+  color: blue
+
+inputs:
+  file:
+    description: path to .env file
+    default: ${{ github.workspace }}/.env
+
+runs:
+  using: composite
+  steps:
+    - id: data
+      shell: bash
+      run: ${{ github.action_path }}/scripts/index.sh ${{ inputs.file }}

@@ -3,7 +3,6 @@
 $about.description$
 
 [![license][license-img]][license-url]
-[![release][release-img]][release-url]
 
 $body$
 
@@ -13,6 +12,3 @@ $body$
 
 [license-url]: LICENSE
 [license-img]: https://badgen.net/github/license/$about.repository$
-
-[release-url]: https://github.com/$about.repository$/releases
-[release-img]: https://badgen.net/github/release/$about.repository$
