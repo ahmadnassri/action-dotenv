@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ ! -f $1 ]]; then
-  echo "::warning file=${1}::${1} file does not exist"
+  echo "::notice ::${1} file does not exist"
   exit 0
 fi
 
