@@ -4,6 +4,12 @@ GitHub Actions already contains plenty of [context](https://docs.github.com/en/a
 
 However, it's very limited, and does not include the entirety of the repository metadata.
 
+## Inputs
+
+| input  | required | default | description         |
+| ------ | -------- | ------- | ------------------- |
+| `file` | ❌      | `.env`   | path to `.env` file |
+
 ## Usage
 
 ``` yaml

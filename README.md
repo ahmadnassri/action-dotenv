@@ -10,6 +10,12 @@ GitHub Actions already contains plenty of [context][] for use within Actions wor
 
 However, it's very limited, and does not include the entirety of the repository metadata.
 
+## Inputs
+
+| input  | required | default | description         |
+|--------|----------|---------|---------------------|
+| `file` | ❌       | `.env`  | path to `.env` file |
+
 ## Usage
 
 ``` yaml
