@@ -5,7 +5,7 @@ if [[ ! -f $1 ]]; then
   exit 0
 fi
 
-cat .env | while read line || [[ -n $line ]];
+cat $1 | while read line || [[ -n $line ]];
 do
   [[ ${line//[[:space:]]/} =~ ^#.* || -z "$line" ]] && continue
   echo $line | tr "=" "\n" | while read -r key; do
